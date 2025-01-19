@@ -1,0 +1,231 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; margin: 0%;padding: 0%; background: #f2f2f2;font-size: 22px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #9295CA;
+}
+.nav-links {
+  list-style: none;
+  display: flex; 
+  gap: 25px; 
+}
+.nav-links li a{
+  text-decoration: none;
+  color: black;
+}
+.menu-toggle{
+  display: none;
+  flex-direction: column; 
+}
+.menu-toggle .bar{ 
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+main {
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #9295CA;
+}
+.focim {
+  background-image: url("img/website-programming-code-picjumbo-com1900.jpg");
+  height: 800px;
+}
+.h1 {
+  background-color: #3b90f1;
+  opacity: 0.5;
+  padding: 28px 0 1px 0;
+}
+h1 {
+  text-align: center;
+  color: white;
+  margin-top: 0;
+}
+h2 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+.reszponziv-tarolo {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2px;
+  background-color: #fff;
+}
+
+.reszponziv-szoveg {
+  display: inline;
+  width: 50%;
+  float: left;
+}
+
+.reszponziv-kep-tarto {
+  display: inline;
+  width: auto;
+  float: right;
+}
+
+.reszponziv-tarolo::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.hatarido-tarolo {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2px;
+  background-color: #fff;
+}
+
+.hatarido-szoveg {
+  display: inline;
+  width: 50%;
+  float: left;
+}
+
+.hatarido-kep {
+  display: inline;
+  width: auto;
+  float: right;
+}
+
+.hatarido-tarolo::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+footer {
+  height: auto;
+  padding: 3px 3%;
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width:500px){
+  .menu-toggle{
+    display: flex;
+  }            
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 100%;
+    background-color: #9295CA;
+  }
+  .nav-links.show{ 
+    display: flex;
+  }
+  .nav-links li{
+    text-align: center;
+    padding: 5px;
+  }
+  h1 {
+    text-align: left;
+  }
+  .reszponziv-kep {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .reszponziv-tarolo {
+    display: block;
+  }
+  div .reszponziv-szoveg {
+    display: block; 
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .reszponziv-kep-tarto {
+    display: block; 
+    max-width: 50%;
+    margin: auto;
+    float: none;
+  }
+  .reszponziv-kep-tarto img {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  
+  div .hatarido-szoveg {
+    display: block;
+    width: 100%;
+    float: none;
+  }
+  
+  .hatarido-kep {
+    display: block;
+    margin: auto;
+    width: 50%;
+    float: none;
+  }
+  .hatarido-kep img {
+    margin: 0 auto;
+  }
+  
+}
+
+@media screen and (max-width: 1200px) {
+  .focim {
+    background-image: url("img/website-programming-code-picjumbo-com1900vagott.jpg");
+  height: 600px;
+  }
+}
+
+ 
+
+
+
+/*Árak*/
+.kozepre{
+  margin: auto;
+  width: 50%;
+}
+.arakh1 {
+  color: #9295CA;
+}
+table, th, td {
+  border:1px solid black;
+}
+td {
+  text-align: center;
+}
+
+.arak {
+  color: red;
+}
+
+@media screen and (max-width:712px) {
+  .kozepre {
+    width: 100%;
+  }
+}
+
+/*Kapcsolat*/
+.form-igazit {
+  margin: auto;
+  width: 50%;
+}
+
+@media screen and (max-width:650px){
+  .form-igazit {
+    width: 100%;
+    margin: 10px;
+  }
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="arak.html">Árak</a></li>
+            <li><a href="kapcsolat.html">Kapcsolat</a></li>
+        </ul>
+    </nav>
+    <div class="form-igazit">
+        <form>
+            <section class="left igazit">
+                <label for="vezeteknev">Vezetéknév<sup>*</sup></label>
+                <br>
+                <input type="text" name="vezeteknev" id="vezeteknev" required>
+            </section>
+            <section>
+                <label for="keresztnev">Keresztnév<sup>*</sup></label>
+                <br>
+                <input type="text" name="keresztnev" id="keresztnev" required>
+            </section>
+            <section class="left">
+                <label for="email">E-mail cím<sup>*</sup></label>
+                <br>
+                <input type="email" name="email" id="email" required>
+            </section>
+            <section class="left">
+                <label for="uzenet">Üzenet:<sup>*</sup></label>
+                <br>
+                <textarea name="uzenet" id="uzenet"></textarea>
+            </section>
+
+            <input type="submit" value="Elküldöm">
+          </form> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

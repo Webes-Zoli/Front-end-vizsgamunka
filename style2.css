@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%; margin: 0%;padding: 0%; background: #f2f2f2;font-size: 22px;
+  }
+  
+  .navbar {
+    display: flex; /* ezáltal tudjuk használni a következő sort */
+    justify-content: space-between; /* space-around jobbra igazítja a li-ket, space-between balra igazítja a hamburgermenüt kis képernyőnél viszont nagynál a linkeket is */
+    align-items: center;
+    padding: 10px;
+    background-color: #9295CA;
+  }
+  .nav-links {
+    list-style: none; /*pöttyök levétele*/
+    display: flex; /* egysorba rendezi a li-ket */
+    gap: 25px; /* térközt hagy a li-k között */
+  }
+  .nav-links li a{
+    text-decoration: none;
+    color: black;
+  }
+  .menu-toggle{
+    display: none;
+    flex-direction: column; /* azért kell megadni mert igaz, hogy display: none; de ha nem adjuk meg akkor a 3 vonalból csak egy látszódik 600px alatt is*/
+  }
+  .menu-toggle .bar{ /* hamburgermenü vonalai */
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 4px 0;
+  }
+  
+  main {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  .focim {
+    background-image: url("img/website-programming-code-picjumbo-com1900.jpg");
+    height: 800px;
+  }
+  .h1 {
+    background-color: #3b90f1;
+    opacity: 0.5;
+    padding: 28px 0 1px 0;
+  }
+  h1 {
+    text-align: center;
+    color: white;
+    margin-top: 0;
+  }
+  h2 {
+    text-align: center;
+  }
+  .reszponziv-tartalom {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 10%;
+    align-items: center;
+  }
+  
+  .reszponziv-kep-tarto img {
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  
+  .hatarido-tarolo {
+    
+    margin: 0 10%;
+  }
+  
+  .hatarido-szoveg {
+    display: inline;
+    /* margin-left: 10%; */
+    width: 50%;
+    float: left;
+  }
+  
+  .hatarido-kep {
+    display: inline;
+    /* margin-right: 10%; */
+    width: auto;
+    float: right;
+  }
+  
+  .hatarido-tarolo::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  footer {
+    height: 200px;
+    background-color: black;
+    color: white;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .focim {
+      background-image: url("img/website-programming-code-picjumbo-com1900vagott.jpg");
+    height: 600px;
+    }
+  }
+  
+  @media screen and (max-width:900px) {
+    .reszponziv-tartalom {
+      display: block;
+      margin: 3%;
+    }
+    div .reszponziv-szoveg {
+      display: block; 
+      width: 100%;
+      left: -2px;
+      flex-wrap: wrap;
+      /* margin: 10px;
+      padding-right: 10%; */
+    }
+    .reszponziv-kep-tarto {
+      display: block; 
+      width: 100%;
+      margin: 10px;
+    }
+    .reszponziv-kep {
+      margin: 0 auto;
+    }
+    .hatarido-szoveg {
+      display: block;
+      width: 100%;
+      float: none;
+    }
+    
+    .hatarido-kep {
+      display: block;
+      margin: auto;
+      width: 50%;
+      float: none;
+    }
+    .hatarido-kep img {
+      margin: 0 auto;
+    }
+    
+  } 
+  
+  @media screen and (max-width:500px){
+    .menu-toggle{
+        display: flex;
+    }            
+    .nav-links {
+        display: none;
+        flex-direction: column; /* it adom meg, hogy egymás alá menjen a 3 vonalak */
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        width: 100%;
+        background-color: #9295CA;
+    }
+    .nav-links.show{ /*ez a kapcsoló határozza meg hogvy mikor nyíljon le a menü */
+        display: flex;
+    }
+    .nav-links li{
+        text-align: center;/* linkek középre igazítása */
+        padding: 5px;
+    }
+    h1 {
+      text-align: left;
+    }
+    .reszponziv-kep {
+      margin: 0 auto;
+    }
+  }
+  
+  /*Árak*/
+  .kozepre{
+    margin: auto;
+    width: 50%;
+  }
+  table, th, td {
+    border:1px solid black;
+  }
+  td {
+    text-align: center;
+  }
+  
+  .arak {
+    color: red;
+  }
+  
+  @media screen and (max-width:712px) {
+    .kozepre {
+      width: 100%;
+    }
+  }
+  
+  /*Kapcsolat*/
+  .form-igazit {
+    margin: auto;
+    width: 50%;
+  }
+  
+  @media screen and (max-width:650px){
+    .form-igazit {
+      width: 100%;
+      margin: 10px;
+    }
+  }
+  
+  
